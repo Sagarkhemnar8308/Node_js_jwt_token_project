@@ -14,8 +14,8 @@ const userLogic = {
     async deleteUser(id){
         return await userSchema.findByIdAndDelete(id);
     },
-    async getUserByEmail(email,password){
-        return await userSchema.findOne({email:data,password:password})
+    async getUserByEmail(email){
+        return await userSchema.findOne({email:email})
     },
     async userExist(data){
         return await userSchema.findOne(data).select("-password")

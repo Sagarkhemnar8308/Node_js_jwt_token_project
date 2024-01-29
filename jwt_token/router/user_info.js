@@ -43,7 +43,6 @@ app.put('/updateUser/:id', (req, resp) => {
             "status":"Failed to update"
         })
     }
-
 });
 
 app.delete('/deleteUser/:id', (req, resp) => {
